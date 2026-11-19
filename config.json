@@ -1,11 +1,12 @@
 {
   "brand": "ZVC COMUNITY",
-  "key": "ZVC-FREE-2012",
+  "key": "ZVC-PREMIUM-2012",
   "note": "Salin key ini lalu tempel di aplikasi. Jika key tidak berfungsi, kembali ke halaman ini untuk mengambil key terbaru.",
   "waLink": "https://whatsapp.com/channel/0029VbDNxiu0gcfPvwoxRM2P",
   "contact": "https://wa.me/6282264221219",
   "verifySec": 6,
   "links": [
-    { "label": "Download (Free)", "url": "https://whatsapp.com/channel/0029VbDNxiu0gcfPvwoxRM2P" },
+    { "label": "Download biasa (gratis)", "url": "https://contoh.com/file-gratis" },
+    { "label": "Download cepat (premium)", "url": "https://contoh.com/file-premium" }
   ]
 }
