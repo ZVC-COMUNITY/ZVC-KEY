@@ -1,0 +1,12 @@
+{
+  "brand": "IKYZ MODZ",
+  "key": "ZVC-PREMIUM-2012",
+  "note": "Salin key ini lalu tempel di aplikasi. Jika key tidak berfungsi, kembali ke halaman ini untuk mengambil key terbaru.",
+  "waLink": "https://whatsapp.com/channel/0029VbCyvm4EKyZLFCWLKV2z",
+  "contact": "https://wa.me/15513230533",
+  "verifySec": 6,
+  "links": [
+    { "label": "Download biasa (gratis)", "url": "https://contoh.com/file-gratis" },
+    { "label": "Download cepat (premium)", "url": "https://contoh.com/file-premium" }
+  ]
+}

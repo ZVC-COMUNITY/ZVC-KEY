@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090e16">
+<title>IKYZ MODZ — Get Key</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&amp;family=Rubik:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090e16;--panel:#111a2a;--line:#22304a;--text:#e8eef9;--muted:#8fa0bd;--accent:#7c5cff;--accent2:#22d3ee;--gold:#ffc857;--ok:#35e08f;--btn-text:#fff;--glow1:rgba(124,92,255,.28);--glow2:rgba(34,211,238,.16)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f1f4fb;--panel:#fff;--line:#d6deee;--text:#121a2b;--muted:#5b6a86;--gold:#b97800;--ok:#0f9d58;--glow1:rgba(124,92,255,.16);--glow2:rgba(34,211,238,.12)}}
+:root[data-theme="light"]{--bg:#f1f4fb;--panel:#fff;--line:#d6deee;--text:#121a2b;--muted:#5b6a86;--gold:#b97800;--ok:#0f9d58;--glow1:rgba(124,92,255,.16);--glow2:rgba(34,211,238,.12)}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font:400 15px/1.55 Rubik,system-ui,sans-serif;background-image:radial-gradient(60% 40% at 15% 0%,var(--glow1),transparent 70%),radial-gradient(50% 35% at 100% 10%,var(--glow2),transparent 70%);background-repeat:no-repeat}
+.wrap{max-width:440px;margin:0 auto;padding:28px 18px 40px}
+h1,h2,.brand,.kv,.btn{font-family:"Chakra Petch",Rubik,sans-serif}
+.brand{font-weight:700;font-size:15px;letter-spacing:.14em;color:var(--accent2);margin:0 0 10px}
+h1{font-size:30px;line-height:1.1;margin:0 0 8px;font-weight:700}
+.sub{color:var(--muted);margin:0 0 24px}
+.steps{display:grid;gap:12px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;grid-template-columns:34px 1fr;gap:4px 14px;transition:border-color .3s,opacity .3s}
+.step.locked{opacity:.5}
+.step.active{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+.dot{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 15px "Chakra Petch",sans-serif;border:1.5px solid var(--line);color:var(--muted)}
+.active .dot{border-color:var(--accent);color:var(--accent)}
+.done .dot{background:var(--ok);border-color:var(--ok);color:#06240f}
+.step h2{margin:5px 0 0;font-size:17px}
+.step .body{grid-column:2}
+.step p{margin:4px 0 12px;color:var(--muted);font-size:14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:48px;padding:12px 16px;border:0;border-radius:12px;font-weight:700;font-size:16px;color:var(--btn-text);background:linear-gradient(135deg,var(--accent),#4f7bff);text-decoration:none;cursor:pointer;transition:transform .12s,filter .2s}
+.btn:hover{filter:brightness(1.1)}.btn:active{transform:scale(.98)}
+.btn.wa{background:linear-gradient(135deg,#1fb857,#0e8f46)}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--text)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:12px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.keycard{position:relative;margin-top:2px;border-radius:18px;padding:20px 18px;background:linear-gradient(160deg,color-mix(in srgb,var(--gold) 16%,var(--panel)),var(--panel));border:1px solid color-mix(in srgb,var(--gold) 55%,var(--line))}
+.keycard::before,.keycard::after{content:"";position:absolute;top:50%;width:16px;height:16px;border-radius:50%;background:var(--bg);border:1px solid color-mix(in srgb,var(--gold) 55%,var(--line));transform:translateY(-50%)}
+.keycard::before{left:-9px;clip-path:inset(0 0 0 50%)}.keycard::after{right:-9px;clip-path:inset(0 50% 0 0)}
+.klabel{font-size:13px;color:var(--gold);margin:0 0 6px;font-weight:500}
+.kv{font-size:26px;font-weight:700;letter-spacing:.06em;word-break:break-all;margin:0 0 14px;color:var(--text)}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+.win{display:grid;gap:10px;margin-top:14px}
+.foot{margin-top:22px;text-align:center;font-size:13px;color:var(--muted)}
+.foot a{color:var(--accent2)}
+.admin{margin-top:30px;border:1.5px dashed var(--gold);border-radius:16px;padding:16px;background:var(--panel)}
+.admin h2{margin:0 0 4px;font-size:17px;color:var(--gold)}
+.admin label{display:block;font-size:13px;color:var(--muted);margin:12px 0 4px}
+.admin input,.admin textarea{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+.row{display:flex;gap:8px}.row input{flex:1}.row .btn{width:auto;min-height:0;padding:0 14px;font-size:14px}
+#msg{font-size:13px;margin:10px 0 0;min-height:18px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<style>artifact-sync,artifact-local{display:contents}</style></head>
+<body>
+<main class="wrap" id="app"><p class="sub">Memuat…</p></main>
+<script>
+/* GANTI dengan link RAW config.json di GitHub kamu */
+const CONFIG_URL="https://raw.githubusercontent.com/USERNAME/REPO/main/config.json";
+
+let S=null,verifying=false,reveal=false,P={followed:false,verified:false};
+const $=s=>document.querySelector(s);
+const esc=t=>String(t==null?'':t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const url=u=>/^https?:\/\//i.test(u||'')?u:'';
+const K='ikyz_gate';
+try{const r=JSON.parse(localStorage.getItem(K)||'null');if(r)P=r}catch(e){}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(P))}catch(e){}};
+
+async function load(){
+  $('#app').innerHTML='<p class="sub">Memuat…</p>';
+  try{
+    const r=await fetch(CONFIG_URL+'?t='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw 0;
+    S=await r.json();render();
+  }catch(e){
+    $('#app').innerHTML='<p class="brand">Gagal memuat</p><h1>Koneksi bermasalah</h1><p class="sub">Key belum bisa dimuat. Periksa internet kamu lalu coba lagi.</p><button class="btn" id="retry">Coba lagi</button>';
+    $('#retry').onclick=load;
+  }
+}
+function stepBox(n,state,title,inner){
+  return `<section class="step ${state}"><div class="dot">${state==='done'?'✓':n}</div><h2>${title}</h2><div class="body">${inner}</div></section>`;
+}
+function render(){
+  const cur=!P.followed?1:!P.verified?2:3;
+  const st=n=>n<cur?'done':n===cur?'active':'locked';
+  const s1=`<p>Buka saluran WhatsApp, lalu tekan Follow.</p>`+(cur===1?`<a class="btn wa" id="follow" href="${esc(url(S.waLink))}" target="_blank" rel="noopener">Follow saluran ${esc(S.brand)}</a>`:'');
+  const s2=cur===2?`<p>Sudah follow? Tekan tombol di bawah untuk verifikasi.</p><button class="btn" id="verify" ${verifying?'disabled':''}>${verifying?'Memverifikasi…':'Saya sudah follow'}</button><div class="bar" ${verifying?'':'hidden'}><i id="fill"></i></div>`:`<p>Konfirmasi bahwa kamu sudah follow.</p>`;
+  const links=(S.links||[]).filter(l=>url(l.url)).map(l=>`<a class="btn ghost" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label||'Download')}</a>`).join('');
+  const s3=cur===3?`<div class="keycard"><p class="klabel">Key kamu</p><p class="kv" id="kv">${esc(S.key)}</p><button class="btn" id="copy">Salin key</button></div><p class="note">${esc(S.note)}</p>${links?`<div class="win">${links}</div>`:''}`:`<p>Key akan muncul di sini.</p>`;
+  $('#app').innerHTML=`<p class="brand">${esc(S.brand)}</p><h1>Ambil key kamu</h1><p class="sub">Selesaikan 2 langkah singkat untuk membuka key.</p><div class="steps">${stepBox(1,st(1),'Follow saluran',s1)}${stepBox(2,st(2),'Verifikasi',s2)}${stepBox(3,st(3),'Key siap',s3)}</div><p class="foot">Butuh bantuan? <a href="${esc(url(S.contact))}" target="_blank" rel="noopener">Chat admin</a></p>`;
+  const f=$('#follow');if(f)f.addEventListener('click',()=>{setTimeout(()=>{P.followed=true;save();render()},900)});
+  const v=$('#verify');if(v)v.addEventListener('click',verify);
+  const c=$('#copy');if(c)c.addEventListener('click',copy);
+  if(cur===3&&reveal){reveal=false;scramble()}
+}
+function verify(){
+  verifying=true;render();
+  const fill=$('#fill'),ms=Math.max(2,+S.verifySec||6)*1000,t0=performance.now();
+  (function tick(){const p=Math.min(1,(performance.now()-t0)/ms);if(fill)fill.style.width=p*100+'%';
+    if(p<1)requestAnimationFrame(tick);else{verifying=false;P.verified=true;reveal=true;save();render()}})();
+}
+function scramble(){
+  const el=$('#kv');if(!el||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const real=S.key,ch='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',t0=performance.now(),dur=900;
+  (function f(){const p=(performance.now()-t0)/dur;
+    el.textContent=real.split('').map((c,i)=>c==='-'||i<p*real.length?c:ch[Math.random()*ch.length|0]).join('');
+    if(p<1)requestAnimationFrame(f);else el.textContent=real})();
+}
+async function copy(){
+  const b=$('#copy');let ok=false;
+  try{await navigator.clipboard.writeText(S.key);ok=true}catch(e){
+    try{const t=document.createElement('textarea');t.value=S.key;document.body.appendChild(t);t.select();ok=document.execCommand('copy');t.remove()}catch(_){}}
+  b.textContent=ok?'Key tersalin ✓':'Tahan teks key lalu salin manual';
+  setTimeout(()=>{if(b)b.textContent='Salin key'},2200);
+}
+load();
+</script>
+</body>
+</html>
